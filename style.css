@@ -1,0 +1,296 @@
+*{
+    font-family: 'Open Sans';
+    user-select: none;
+    text-decoration: none;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body{
+    margin: 0;
+}
+body::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+.greeting{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    top: 10px;
+    font-size: 25px;
+    transition: 500ms ease;
+    white-space: nowrap;
+
+}
+.greeting h1{
+    display: flex;
+
+}
+.greeting label{
+    display: inline-block;
+    animation: wave 700ms infinite alternate;
+}
+.greeting:hover{
+    text-shadow: 0px 0px 10px rgb(63, 60, 60);
+}
+.greeting span{
+    overflow: hidden;
+    text-wrap: nowrap;
+    margin-left: 10px;
+    display: inline-block;
+    animation: name 2s infinite alternate;
+    border-right: 2px solid;
+}
+@keyframes wave {
+    0%{
+        transform: rotate(35deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes name{
+   0%{
+     width: 0%;
+   }
+   100%{
+    width: 100%;
+    color: purple;
+   }
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+#home .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile{
+    background: url(profile.jpeg);
+    width: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    transition: 300ms ease;
+}
+.profile:hover{
+    box-shadow: 0px 0px 100px rgb(80, 80, 80);
+    scale: 1.05;
+}
+
+#connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    margin-right: 20px;
+}
+.links{
+    margin: 10px;
+    font-weight: bold;
+    transition: 300ms ease;
+}
+.links:hover{
+    text-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+
+#About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: fit-content;
+    padding: 50px;
+}
+#About h1{
+    justify-self: flex-start;
+    font-size: 35px;
+}
+#About .content{
+    width: fit-content;
+    padding: 30px;
+    flex :3;
+}
+#About .content h2{
+    font-size: 30px;
+}
+#About .content p{
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 2cm;
+    width: fit-content;
+    padding: 30px;
+}
+#About .content .ece{
+    color: purple;
+}
+#About .interest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: fit-content;
+    flex: 1;
+    padding: 0px;
+}
+#About .interest ul{
+    list-style-type: disc;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#About .interest li{
+    list-style-type: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms ease;
+}
+#About .interest li:hover{
+    background-color: purple;
+    scale: 1.05;
+    position: relative;
+    transform: rotate(-2deg);
+}
+
+#education{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+}
+#education h1{
+    font-size: 35px;
+}
+
+#skills{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+}
+#skills h1{
+    font-size: 35px;
+}
+#skills .container{
+    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(4,25%);
+   grid-template-rows: repeat(2,calc(max-content));
+
+}
+#skills .container .skill{
+    min-width: 35%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin-top:10px;
+}
+
+.skill-java{
+    max-width: 75%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-kotlin{
+    max-width: 45%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-cpp{
+    max-width: 70%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-html{
+    max-width: 75%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-android{
+    max-width: 40%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-react{
+    max-width: 60%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-dbms{
+    max-width: 60%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.skill-linux{
+    max-width: 35%;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: 3s ease-in-out;
+}
+.container:hover #skill{ 
+    width: 100%;
+    box-shadow: 0px 0px 10px purple;
+}
+
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:50px;
+    height: 100vh;
+}
