@@ -222,7 +222,7 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .skill-kotlin{
     max-width: 45%;
@@ -230,7 +230,7 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .skill-cpp{
     max-width: 70%;
@@ -238,7 +238,7 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .skill-html{
     max-width: 75%;
@@ -246,7 +246,7 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .skill-android{
     max-width: 40%;
@@ -254,15 +254,15 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .skill-react{
     max-width: 60%;
     background-color: purple;
     height: 100%;
     width: 0%;
-    border-radius: 5px;
-    transition: 3s ease-in-out;
+    border-radius: 5px; 
+    transition: 1s ease-in-out;
 }
 .skill-dbms{
     max-width: 60%;
@@ -270,7 +270,7 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .skill-linux{
     max-width: 35%;
@@ -278,7 +278,7 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 0%;
     border-radius: 5px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .container:hover #skill{ 
     width: 100%;
