@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    margin: 0;
+    /* margin: 0; */
 }
 body::-webkit-scrollbar{
     scrollbar-width: none;
@@ -86,22 +86,15 @@ body::-webkit-scrollbar{
     transition: 300ms ease;
 }
 .profile:hover{
-    box-shadow: 0px 0px 100px rgb(80, 80, 80);
+    box-shadow: 0px 0px 100px rgb(134, 134, 134);
     scale: 1.05;
-}
-
-#connect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-   
 }
 .nav{
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: black;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.833);
     justify-content: space-between;
 }
 .navbar{
@@ -182,29 +175,32 @@ body::-webkit-scrollbar{
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 60vh;
 }
 #education h1{
     font-size: 35px;
 }
-
+#education .container{
+    scale: 1.2;
+}
 #skills{
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 70vh;
 }
 #skills h1{
     font-size: 35px;
 }
 #skills .container{
     width: 100%;
+    padding: 30px;
     display: grid;
-   grid-template-columns: repeat(4,25%);
+   grid-template-columns: repeat(3,33.33%);
    grid-template-rows: repeat(2,calc(max-content));
 
 }
@@ -280,7 +276,7 @@ body::-webkit-scrollbar{
     border-radius: 5px;
     transition: 1s ease-in-out;
 }
-.container:hover #skill{ 
+#skills:hover #skill{ 
     width: 100%;
     box-shadow: 0px 0px 10px purple;
 }
@@ -293,4 +289,109 @@ body::-webkit-scrollbar{
     align-items: center;
     padding:50px;
     height: 100vh;
+}
+#projects h1{
+    font-size: 35px;
+}
+#projects .container{
+    margin-top: 50px;
+}
+.tictac{
+    min-width: 200px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    animation: shade 2s infinite alternate;
+}
+.calci{
+    min-width: 200px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    animation: shade 2s infinite alternate;
+}
+.zeno{
+    min-width: 200px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid purple;
+    padding: 20px;
+    border-radius: 20px;
+    animation: shade 2s infinite alternate;
+}
+#projects .container{
+    display: flex;
+}
+@keyframes shade {
+    0%{
+        box-shadow: 0px 0px 20px purple;
+    }
+    100%{
+        box-shadow: 0px 0px 70px purple;
+        scale: 1.02;
+    }
+}
+#projects .container a{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 500ms ease;
+}
+#projects .container a:hover{
+    background-color: rgb(211, 2, 211);
+}
+.repo-link{
+    justify-self: flex-end;
+    background-color: white;
+    width: fit-content;
+    color: black;
+}
+
+#connect{
+    display: flex;
+    border-top: 1px solid purple;
+    margin: 0px 30px 0px 30px;
+    justify-content: center;
+    align-items: flex-end;
+    height: fit-content;
+}
+#connect .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connect-links img:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 20px purple;
+}
+.connect-links img{
+    margin: 10px;
+    width: 150px;
+    transition: 500ms ease;
+}
+
+.emoji{
+    display: inline-block;
+    animation: hover 1s infinite alternate;
+}
+
+@keyframes hover {
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+       transform: rotate(-10deg);
+    }
 }
