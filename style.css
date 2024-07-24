@@ -8,10 +8,6 @@ html{
     scroll-behavior: smooth;
     background-color: black;
 }
-
-body{
-    /* margin: 0; */
-}
 body::-webkit-scrollbar{
     scrollbar-width: none;
 }
