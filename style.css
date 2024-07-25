@@ -201,9 +201,7 @@ body::-webkit-scrollbar{
     width: 100%;
     padding: 30px;
     display: grid;
-   grid-template-columns: repeat(3,33.33%);
-   grid-template-rows: repeat(2,calc(max-content));
-
+    grid-template-columns: repeat(3,33.33%);
 }
 #skills .container .skill{
     min-width: 35%;
@@ -376,13 +374,18 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: center;
 }
+.connect-links{
+    display: flex;
+}
 .connect-links img:hover{
     scale: 1.1;
     box-shadow: 0px 0px 20px purple;
 }
 .connect-links img{
     margin: 10px;
-    width: 150px;
+    /* width: 150px; */
+    border: 1px solid rgb(27, 27, 27);
+    height: 40px;
     transition: 500ms ease;
 }
 

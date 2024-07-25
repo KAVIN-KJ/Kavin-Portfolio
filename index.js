@@ -65,4 +65,5 @@ function args(...nums){
     }
     console.log(sum);
 }
-args(1,2,3,45,6,6,7,7)
+// args(1,2,3,45,6,6,7,7)
+
