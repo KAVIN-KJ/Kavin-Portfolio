@@ -93,6 +93,8 @@ body::-webkit-scrollbar{
 .nav{
     position: fixed;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.833);
@@ -112,6 +114,36 @@ body::-webkit-scrollbar{
 }
 .links:hover{
     text-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+
+.resume a{
+    padding: 7px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    text-overflow: clip;
+    text-wrap: nowrap;
+    transition: 500ms ease;
+}
+
+.resume a:hover{
+    background-color: rgb(255, 0, 255);
+    box-shadow: 0px 0px 20px rgb(255, 0, 255);
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav a{
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .resume a{
+        padding: 5px;
+        margin-left: 5px;
+    }
 }
 
 #About{
