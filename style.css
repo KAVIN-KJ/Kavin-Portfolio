@@ -303,10 +303,19 @@ body::-webkit-scrollbar{
     border-radius: 5px;
     transition: 1s ease-in-out;
 }
-#skills:hover #skill{ 
-    width: 100%;
-    box-shadow: 0px 0px 10px purple;
+#skill{ 
+    animation: skill 2s infinite ease alternate;
 }
+@keyframes skill {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+        box-shadow: 0px 0px 20px purple;
+    }
+}
+
 
 
 #projects{
