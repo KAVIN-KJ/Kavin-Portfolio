@@ -53,7 +53,6 @@ body::-webkit-scrollbar{
 }
 .greeting h1{
     display: flex;
-
 }
 .greeting label{
     display: inline-block;
@@ -137,11 +136,9 @@ body::-webkit-scrollbar{
 .links:hover{
     text-shadow: 0px 0px 25px rgb(255, 255, 255);
 }
-
 .resume{
     margin: 20px;
 }
-
 .resume a{
     padding: 7px;
     background-color: white;
@@ -152,14 +149,12 @@ body::-webkit-scrollbar{
     text-wrap: nowrap;
     transition: 500ms ease;
 }
-
 .resume a:hover{
     background-color: rgb(255, 0, 255);
     box-shadow: 0px 0px 20px rgb(255, 0, 255);
     border-radius: 20px;
 
 }
-
 #About{
     display: flex;
     flex-direction: column;
@@ -337,9 +332,6 @@ body::-webkit-scrollbar{
         box-shadow: 0px 0px 20px purple;
     }
 }
-
-
-
 #projects{
     display: flex;
     flex-direction: column;
@@ -419,7 +411,6 @@ body::-webkit-scrollbar{
     width: fit-content;
     color: black;
 }
-
 #connect{
     display: flex;
     border-top: 1px solid purple;
@@ -442,12 +433,10 @@ body::-webkit-scrollbar{
 }
 .connect-links img{
     margin: 10px;
-    /* width: 150px; */
     border: 1px solid rgb(27, 27, 27);
     height: 40px;
     transition: 500ms ease;
 }
-
 .emoji{
     display: inline-block;
     animation: hover 1s infinite alternate;
@@ -461,8 +450,6 @@ body::-webkit-scrollbar{
        transform: rotate(-10deg);
     }
 }
-
-
 @media screen and (max-width: 700px) {
     .navbar{
         overflow-x: hidden;
