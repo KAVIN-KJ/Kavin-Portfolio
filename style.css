@@ -377,6 +377,9 @@ body::-webkit-scrollbar{
     margin: 10px;
     flex: 1;
     border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 20px;
     animation: shade 2s infinite alternate;
@@ -386,6 +389,9 @@ body::-webkit-scrollbar{
     margin: 10px;
     flex: 1;
     border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 20px;
     animation: shade 2s infinite alternate;
@@ -412,6 +418,7 @@ body::-webkit-scrollbar{
     font-weight: bold;
     border-radius: 10px;
     transition: 500ms ease;
+    width: fit-content;
 }
 #projects .container a:hover{
     background-color: rgb(211, 2, 211);
