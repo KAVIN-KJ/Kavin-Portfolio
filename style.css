@@ -4,6 +4,7 @@
     text-decoration: none;
     color: white;
 }
+
 .scroll-watcher{
     width: 100%;
     height: 5px;
@@ -159,8 +160,8 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
-    height: fit-content;
+    justify-content: space-evenly;
+    height: 100vh;
     padding: 50px;
 }
 #About h1{
@@ -345,6 +346,7 @@ body::-webkit-scrollbar{
 }
 #projects .container{
     margin-top: 50px;
+    justify-content: space-evenly;
 }
 .tictac{
     min-width: 200px;
@@ -371,6 +373,15 @@ body::-webkit-scrollbar{
     animation: shade 2s infinite alternate;
 }
 .zeno{
+    min-width: 200px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid purple;
+    padding: 20px;
+    border-radius: 20px;
+    animation: shade 2s infinite alternate;
+}
+.skysage{
     min-width: 200px;
     margin: 10px;
     flex: 1;
