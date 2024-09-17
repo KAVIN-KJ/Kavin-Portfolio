@@ -101,7 +101,7 @@ body::-webkit-scrollbar{
     align-items: center;
 
 }
-.profile{
+.profile{   
     background: url(profile.jpeg);
     width: 300px;
     border-radius: 50%;
